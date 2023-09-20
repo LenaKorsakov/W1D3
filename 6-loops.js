@@ -3,7 +3,15 @@
 // Anatomy of a for-loop
 // for (variable initialisation ; condition ; increment / decrement) {}
 for (let i = 0; i < 20; i++) {
-	console.log(`i is now ${i}`)
+  console.log(`i is now ${i}`);
+}
+
+for (let i = 0; i < 50; i++) {
+  if (i % 2 === 0) {
+    continue;
+  }
+
+  console.log(i);
 }
 /**
  * Infinite loop:
@@ -16,62 +24,72 @@ for (let i = 0; i < 20; i++) {
 
 // while loop
 
-let myName = "a"
+let myName = 'a';
 while (myName.length < 1) {
-	myName += "Hi !"
+  myName += 'Hi !';
 }
 
-console.log(myName)
+console.log(myName);
 
-const now = Date.now()
+const now = Date.now();
 
 do {
-	console.log("Time is running...")
-} while (Date.now() - now < 1000)
+  console.log('Time is running...');
+} while (Date.now() - now < 1000);
 
-console.log(Date.now(), new Date())
+console.log(Date.now(), new Date());
 console.log(
-	new Intl.DateTimeFormat(undefined, {
-		dateStyle: "full",
-		timeStyle: "short",
-	}).format(new Date())
-)
+  new Intl.DateTimeFormat(undefined, {
+    dateStyle: 'full',
+    timeStyle: 'short',
+  }).format(new Date())
+);
 
 // for ... of loop
-const myArray = ["Cat", "Potato", "Car"]
+const myArray = ['Cat', 'Potato', 'Car'];
 
-const myVariable = "Well hello there!"
+const myVariable = 'Well hello there!';
 for (let i = 0; i < myArray.length; i++) {
-	console.log(myArray[i])
+  console.log(myArray[i]);
 }
 
-let newVariable = "*"
+let newVariable = '*';
 for (let i = 0; i < myVariable.length; i++) {
-	// console.log(myVariable[i])
-	console.log(newVariable)
-	newVariable += myVariable[i] + "*"
+  // console.log(myVariable[i])
+  console.log(newVariable);
+  newVariable += myVariable[i] + '*';
 }
 
 for (let i = myVariable.length - 1; i >= 0; i--) {
-	console.log(myVariable[i])
+  console.log(myVariable[i]);
 }
 
 for (const element of myArray) {
-	console.log(element)
+  console.log(element);
 }
 
 // break and continue
-let index = 0
+let index = 0;
 while (index < 100) {
-	if (index === 3) {
-		// Go to the next iteration
-		index++
-		continue
-	}
-	if (index === 6) {
-		// Stop the while loop
-		break
-	}
-	console.log("i is now " + index)
-	index++
+  if (index === 3) {
+    // Go to the next iteration
+    index++;
+    continue;
+  }
+  if (index === 6) {
+    // Stop the while loop
+    break;
+  }
+  console.log('i is now ' + index);
+  index++;
 }
+
+let name = 'Loop';
+let result = '*';
+
+for (let i = 0; i < name.length; i++) {
+  const char = name[i] + '*';
+  result += char;
+}
+
+console.log(result);

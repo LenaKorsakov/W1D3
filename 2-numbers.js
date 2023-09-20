@@ -12,15 +12,15 @@
  * modulo: %
  */
 
-let result = 2 / 3
+let result = 2 / 3;
 
-let remainder = 3 % 2
+let remainder = 3 % 2;
 
-const amountOfMinutes = 132
+const amountOfMinutes = 132;
 
-const amountOfHours = Math.floor(amountOfMinutes / 60)
-const amountOfRemainingMinutes = amountOfMinutes % 60
-console.log(amountOfHours, amountOfRemainingMinutes)
+const amountOfHours = Math.floor(amountOfMinutes / 60);
+const amountOfRemainingMinutes = amountOfMinutes % 60;
+console.log(amountOfHours, amountOfRemainingMinutes);
 
 // Order of operations
 
@@ -34,53 +34,54 @@ console.log(amountOfHours, amountOfRemainingMinutes)
  * Shorthand math
  */
 
-let total = 0
+let total = 0;
 
-total = total + 2
-total = total + 3
-total += 5
-total *= 3
-console.log(total)
+total = total + 2;
+total = total + 3;
+total += 5;
+total *= 3;
+total **= 5;
+console.log(total);
 
 // Math constructor
 
-console.log(Math.PI)
+console.log(Math.PI);
 
 // Getting a random number
-console.log("======Random======")
-// console.log(Math.random())
-const randomFloat = Math.random() // .76436
-console.log(randomFloat)
-const randomLessThanTen = randomFloat * 10 // 7.6436
-console.log(randomLessThanTen)
-const randomInteger = Math.floor(randomLessThanTen) //  7
-console.log(randomInteger)
+console.log('======Random======');
+console.log(Math.random());
+const randomFloat = Math.random(); // .76436
+console.log(randomFloat);
+const randomLessThanTen = randomFloat * 10; // 7.6436
+console.log(randomLessThanTen);
+const randomInteger = Math.floor(randomLessThanTen); //  7
+console.log(randomInteger);
 
-const quickRandom = Math.floor(Math.random() * 20)
+const quickRandom = Math.floor(Math.random() * 20);
 
-const myArray = ["Hungry", "Cat", "Sleep", "Nap"]
+const myArray = ['Hungry', 'Cat', 'Sleep', 'Nap'];
 
-console.log(myArray[Math.floor(Math.random() * myArray.length)])
+console.log(myArray[Math.floor(Math.random() * myArray.length)]);
 
 // Operations between numbers and Strings
 
-console.log("2" + 2)
-console.log("2" - 2)
-const numberAsAString = "42aszf"
+console.log('2' + 2);
+console.log('2' - 2);
+const numberAsAString = '42aszf';
 
 // const gettingANumber = numberAsAString * 1
-const gettingANumber = Number(numberAsAString)
-console.log(gettingANumber)
-console.log(typeof gettingANumber)
+const gettingANumber = Number(numberAsAString);
+console.log(gettingANumber);
+console.log(typeof gettingANumber);
 
 // NaN
-console.log(5 * "a")
+console.log(5 * 'a');
 
-console.log(0.1 + 0.2)
+console.log(0.1 + 0.2);
 
 // Incrementing / Decrementing numbers
 
-let myLastNumber = 0
-myLastNumber += 1
-myLastNumber++
-myLastNumber--
+let myLastNumber = 0;
+myLastNumber += 1;
+myLastNumber++;
+myLastNumber--;

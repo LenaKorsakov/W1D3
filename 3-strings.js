@@ -9,11 +9,11 @@
  * backticks: ``
  */
 
-let teachingStaff = "Florian, Daniel, I'll break"
+let teachingStaff = "Florian, Daniel, I'll break";
 let programmingHaiku = `I do Programming,
 Programing is what I do
 The sun is shining
-`
+`;
 // `
 // <div>
 //   <span>${teachingStaff}</span>
@@ -22,9 +22,9 @@ The sun is shining
 
 //  Concatenation
 
-let firstName = "Rudy"
-console.log("Hello " + firstName + "!")
-console.log(`Hello ${firstName}!`)
+let firstName = 'Rudy';
+console.log('Hello ' + firstName + '!');
+console.log(`Hello ${firstName}!`);
 
 // Advantages of backticks
 
@@ -33,34 +33,41 @@ console.log(`Hello ${firstName}!`)
 // Multi-line
 
 // index in Strings
-console.log(firstName[firstName.length - 1])
-console.log(firstName.at(-1))
-console.log(firstName.includes("ude"))
+console.log(firstName[firstName.length - 1]);
+console.log(firstName.at(-1));
+console.log(firstName.includes('ude'));
 
 /**
  * Some available methods
  * length, upper / lower case, includes, replace, replaceAll ...
  */
-console.log(programmingHaiku.length)
-console.log(programmingHaiku.toUpperCase())
-console.log(programmingHaiku.toLowerCase().includes("pro"))
-console.log("RegExp attempt: ", programmingHaiku.match(/pro/i))
-console.log("a" < "A")
+console.log(programmingHaiku.length);
+console.log(programmingHaiku.toUpperCase());
+console.log(programmingHaiku.toLowerCase().includes('pro'));
+console.log(programmingHaiku.replaceAll('a', '*'));
+console.log('RegExp attempt: ', programmingHaiku.match(/pro/i));
+console.log('a' < 'A');
 //           97   65
 
 // Immutability
+const myName = 'elena';
 
-const modifiedName =
-	firstName.slice(0, 3) + firstName[firstName.length - 1].toUpperCase()
+const capitalizeName = myName[0].toUpperCase() + myName.slice(1);
 
-console.log(modifiedName)
+console.log(capitalizeName);
 
 // Comparing strings
 
-console.log("abc" < "CDE")
+console.log('abc' < 'CDE');
 
-console.log("String comparisons: ", "2" === 2)
+console.log('String comparisons: ', '2' === 2);
 
+const firstWord = 'réservé';
+const secondWord = 'reserve';
+
+console.log(
+  firstWord.localeCompare(secondWord, undefined, { sensitivity: 'base' })
+);
 // function sum(a:number, b:number) {
 // 	return a + b
 // }

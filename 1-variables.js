@@ -41,8 +41,10 @@
 // F E D C B A 9 8 7 6 5 4 3 2 1 0
 
 // What is a variable
+let myName;
 
 // Assigning a value to a variable
+myName = 'Lena';
 
 // const vs let
 
@@ -54,17 +56,17 @@
  */
 
 // snake_case
-let my_variable
+let my_variable;
 
 // PascalCase
-let MyVariable
+let MyVariable;
 
 // camelCase (JS)
-let myNewVariable
+let myNewVariable;
 
 // let kebab-case (Not usable in JS but widely used in HTML / CSS)
 
-let π = Math.PI
+let π = Math.PI;
 
 // typeof variables
 

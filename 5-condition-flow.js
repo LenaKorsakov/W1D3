@@ -1,9 +1,11 @@
 // Simple if condition
-const itIsRaining = false
-const itIsWednesday = true
+const itIsRaining = false;
+const itIsWednesday = true;
+const isItTimeToEat = false;
+const randomInteger = Math.floor(Math.random() * 10);
 
 if (itIsWednesday) {
-	console.log("It is half of the week !")
+  console.log('It is half of the week !');
 }
 
 /**
@@ -13,55 +15,64 @@ if (itIsWednesday) {
  */
 
 // if-else block
-if (itIsRaining) {
-	console.log("The rain is upon us!")
+
+if (!itIsWednesday) {
+  console.log('It is not Wednesday!');
 } else {
-	console.log("It is not raining...")
+  console.log('It is Wednesday!');
+}
+
+if (itIsRaining) {
+  console.log('It is raining');
+} else {
+  console.log('It is not raining...');
 }
 
 /**
  * Revering conditions with a bang !
  */
 if (!itIsRaining) {
-	console.log("It is not raining...")
+  console.log('It is not raining...');
 }
-console.log("The rain is upon us!")
+console.log('The rain is upon us!');
 
 // if, else if ..., else block
 if (itIsRaining) {
-	console.log("Rain")
+  console.log('Rain');
 } else if (itIsWednesday) {
-	console.log("Wednesday")
+  console.log('Wednesday');
 } else {
-	console.log("Neither")
+  console.log('Neither');
 }
 
 // switch
-const dayOfTheWeek = "Wednesday"
+const dayOfTheWeek = 'Wednesday';
 
 switch (dayOfTheWeek) {
-	case "Monday":
-		console.log("Did you had a good weekend?")
-		break
-	case "Tuesday":
-		console.log("Tuesday day")
-		break
-	case "Wednesday":
-		console.log("It is the middle of the week")
-		break
-	default:
-		console.log("Half the week is gone already")
+  case 'Monday':
+    console.log('Did you had a good weekend?');
+    break;
+  case 'Tuesday':
+    console.log('Tuesday day');
+    break;
+  case 'Wednesday':
+    console.log('It is the middle of the week');
+    break;
+  default:
+    console.log('Half the week is gone already');
 }
 
 // Ternary operator
 
-const biggerThanDotFive = Math.random() > 0.5 ? "Yup" : "Nay"
-console.log(biggerThanDotFive)
+const biggerThanDotFive = Math.random() > 0.5 ? 'Yup' : 'Nay';
+console.log(biggerThanDotFive);
 // condition ? true : false
 
-let result
+let result;
 if (Math.random() > 0.5) {
-	result = "Yup"
+  result = 'Yup';
 } else {
-	result = "Nay"
+  result = 'Nay';
 }
+
+let ternaryResult = Math.random() * 10 > 5 ? 'Big number' : 'Small number';

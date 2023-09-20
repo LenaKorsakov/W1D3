@@ -1,0 +1,12 @@
+{
+  "license": "MIT",
+  "dependencies": {},
+  "scripts": {
+    "start": "browser-sync start --server --no-ui --files \"js/**/*.js\"",
+    "lint": "eslint js/"
+  },
+  "engines": {
+    "node": "18.x",
+    "npm": "9.x"
+  }
+}
